@@ -1,6 +1,6 @@
 # Articles-VIPER-Architecture
 
-Sample project uses VIPER Architecture. Application that shows the latest news from the United States, using the newsapi.org service.
+Sample project uses VIPER Architecture. Application that shows the latest news from the United States, using the [newsapi.org](https://newsapi.org) service
 
 Application mainly focused the VIPER architecture mainly exposing the core concepts.
 
