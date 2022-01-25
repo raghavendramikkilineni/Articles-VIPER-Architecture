@@ -6,6 +6,7 @@ Application mainly focused the VIPER architecture mainly exposing the core conce
 
 Custom AsyncImageView library to download images asynchronously and caching image's for reusability.
 
-XCode version - 10.1 Language - Swift version - 4.2.1
+XCode version - 10.1
+Swift version - 4.2.1
 
 ![icon](https://user-images.githubusercontent.com/40797128/150978863-09c5a74f-6807-46a5-b77e-98b818642830.png)
