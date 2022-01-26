@@ -15,22 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
      
         window = UIWindow(frame: UIScreen.main.bounds)
-        if let articlesViewController: ArticlesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ArticlesViewController") as? ArticlesViewController {
-            
-            let articleInteractor = ArticleInteractor(container: AppDelegate.bootStarp())
-            
-            let articlePresenter = ArticlesPresenter(interactor: articleInteractor)
-          
-            articleInteractor.presenter = articlePresenter
-    
-            articlePresenter.view = articlesViewController
-            
-            articlesViewController.presenter = articlePresenter
-            
-            let navigationController = UINavigationController(rootViewController: articlesViewController)
-            navigationController.navigationBar.barStyle = .black
-            navigationController.navigationItem.title = "News"
-            window?.rootViewController = navigationController
+        if let articlesVC = NewsRouter.createArticlesView() {
+            window?.rootViewController = articlesVC
             window?.makeKeyAndVisible()
         }
         return true

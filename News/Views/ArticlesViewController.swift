@@ -39,7 +39,7 @@ class ArticlesViewController: UIViewController, ArticlesViewProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        presenter?.getArticles(query: "tesla", from: "2022-01-01", sortBy: "publishedAt", pageSize: pageSize, page: page)
+        presenter?.getArticles(query: "tesla", from: "2022-01-26", sortBy: "publishedAt", pageSize: pageSize, page: page)
     }
     
     func showArticles() {
@@ -68,5 +68,9 @@ extension ArticlesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       presenter?.goToArticleDetail(with: indexPath)
     }
 }

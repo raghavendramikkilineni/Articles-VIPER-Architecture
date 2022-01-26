@@ -26,13 +26,15 @@
 		4444BD1027957A95002E1922 /* NewsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444BD0F27957A95002E1922 /* NewsEndPoint.swift */; };
 		4444BD1227958326002E1922 /* ArticlesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444BD1127958326002E1922 /* ArticlesPresenter.swift */; };
 		4444BD1427958406002E1922 /* ArticlesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444BD1327958406002E1922 /* ArticlesInteractor.swift */; };
+		44CAC6A527A107B0004FF989 /* NewsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CAC6A427A107B0004FF989 /* NewsDetailRouter.swift */; };
 		44EB4EDB27A00AD100257A67 /* ImageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4ED827A00AD100257A67 /* ImageViewPresenter.swift */; };
 		44EB4EDC27A00AD100257A67 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4ED927A00AD100257A67 /* AsyncImageView.swift */; };
 		44EB4EDD27A00AD100257A67 /* ImageViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4EDA27A00AD100257A67 /* ImageViewInteractor.swift */; };
 		44EB4EE027A00B5A00257A67 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4EDE27A00B5900257A67 /* ArticleTableViewCell.swift */; };
 		44EB4EE127A00B5A00257A67 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44EB4EDF27A00B5A00257A67 /* ArticleTableViewCell.xib */; };
 		44EB4EE327A011BC00257A67 /* AsyncImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4EE227A011BC00257A67 /* AsyncImageCache.swift */; };
-		44EB4EE527A0197C00257A67 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4EE427A0197C00257A67 /* Router.swift */; };
+		44EB4EE527A0197C00257A67 /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4EE427A0197C00257A67 /* NewsRouter.swift */; };
+		44EB4EE727A031B100257A67 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EB4EE627A031B100257A67 /* ArticleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +71,15 @@
 		4444BD0F27957A95002E1922 /* NewsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEndPoint.swift; sourceTree = "<group>"; };
 		4444BD1127958326002E1922 /* ArticlesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesPresenter.swift; sourceTree = "<group>"; };
 		4444BD1327958406002E1922 /* ArticlesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesInteractor.swift; sourceTree = "<group>"; };
+		44CAC6A427A107B0004FF989 /* NewsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailRouter.swift; sourceTree = "<group>"; };
 		44EB4ED827A00AD100257A67 /* ImageViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewPresenter.swift; sourceTree = "<group>"; };
 		44EB4ED927A00AD100257A67 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		44EB4EDA27A00AD100257A67 /* ImageViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewInteractor.swift; sourceTree = "<group>"; };
 		44EB4EDE27A00B5900257A67 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		44EB4EDF27A00B5A00257A67 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		44EB4EE227A011BC00257A67 /* AsyncImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageCache.swift; sourceTree = "<group>"; };
-		44EB4EE427A0197C00257A67 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		44EB4EE427A0197C00257A67 /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		44EB4EE627A031B100257A67 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 			children = (
 				44EB4ED727A00AAC00257A67 /* AsyncImageView */,
 				4444BCF3279568A4002E1922 /* ArticlesViewController.swift */,
+				44EB4EE627A031B100257A67 /* ArticleDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,7 +187,8 @@
 		4444BCF227956887002E1922 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				44EB4EE427A0197C00257A67 /* Router.swift */,
+				44EB4EE427A0197C00257A67 /* NewsRouter.swift */,
+				44CAC6A427A107B0004FF989 /* NewsDetailRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4444BD0727956A6D002E1922 /* NewsService.swift in Sources */,
+				44CAC6A527A107B0004FF989 /* NewsDetailRouter.swift in Sources */,
 				4444BCFF279569E4002E1922 /* ParameterEncoding.swift in Sources */,
 				44EB4EE027A00B5A00257A67 /* ArticleTableViewCell.swift in Sources */,
 				4444BCFD279569AB002E1922 /* URLRequestElement.swift in Sources */,
@@ -364,7 +371,8 @@
 				44EB4EDD27A00AD100257A67 /* ImageViewInteractor.swift in Sources */,
 				4444BD1427958406002E1922 /* ArticlesInteractor.swift in Sources */,
 				4444BCF4279568A4002E1922 /* ArticlesViewController.swift in Sources */,
-				44EB4EE527A0197C00257A67 /* Router.swift in Sources */,
+				44EB4EE727A031B100257A67 /* ArticleDetailViewController.swift in Sources */,
+				44EB4EE527A0197C00257A67 /* NewsRouter.swift in Sources */,
 				4444BD1027957A95002E1922 /* NewsEndPoint.swift in Sources */,
 				4444BD0227956A22002E1922 /* DIContainer.swift in Sources */,
 				4444BCCF27956838002E1922 /* AppDelegate.swift in Sources */,
